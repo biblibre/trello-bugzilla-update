@@ -14,9 +14,11 @@ $client->enable('Format::JSON');
 my $community_board_id = "4f1d247284210f0e6300d7d7";
 
 my @lists = (
+    { id => "4f1d247284210f0e6300d7dc", expected_status => "ASSIGNED"},
     { id => "4f1d25c8b42dab031c206c93", expected_status => "Needs Signoff" },
     { id => "4f1d25d0b42dab031c207016", expected_status => "Signed Off" },
     { id => "4f1d25ddb42dab031c2077b4", expected_status => "Passed QA" },
+
 #    { id => "4f1d25e2b42dab031c2079cc", expected_status => "Pushed to (Master|Stable)" },
 #    { id => "4f1d25eeb42dab031c20899e", expected_status => "RESOLVED" },
 );
